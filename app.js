@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
     res.json({
-        message: "DevOps Project is running"
+        message: "DevOps CI pipeline is running"
     });
 });
 
