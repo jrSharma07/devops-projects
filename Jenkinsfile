@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'
+                bat 'npm ci'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'node -e "require(\'./app\')"'
+                bat 'npm test'
             }
         }
     }
